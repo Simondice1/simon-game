@@ -1,0 +1,86 @@
+body {
+  font-family: Arial, sans-serif;
+  background-color: #111;
+  text-align: center;
+  color: white;
+  margin: 0;
+  padding: 0;
+}
+
+h1 {
+  font-size: 5vw;
+  margin-top: 5vw;
+}
+
+h3 {
+  font-size: 4vw;
+  margin: 10px 0;
+}
+
+#controls {
+  margin: 10px auto;
+  max-width: 90%;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 10px;
+}
+
+#controls label {
+  font-size: 4vw;
+}
+
+#stats {
+  margin: 10px 0;
+  font-size: 4vw;
+}
+
+#high-score,
+#progress {
+  margin: 5px 0;
+}
+
+#game-board {
+  display: grid;
+  grid-template-columns: repeat(2, 40vw);
+  grid-gap: 5vw;
+  justify-content: center;
+  margin: 5vw 0;
+}
+
+.btn {
+  width: 40vw;
+  height: 40vw;
+  border-radius: 15px;
+  opacity: 0.8;
+  cursor: pointer;
+  transition: opacity 0.2s;
+}
+
+.btn:active,
+.btn:focus {
+  opacity: 1;
+}
+
+.green { background-color: #28a745; }
+.red { background-color: #dc3545; }
+.yellow { background-color: #ffc107; }
+.blue { background-color: #007bff; }
+
+#start-btn,
+#reset-score-btn {
+  margin-top: 5vw;
+  padding: 3vw 6vw;
+  font-size: 4vw;
+  background-color: white;
+  color: black;
+  border: none;
+  border-radius: 10px;
+  cursor: pointer;
+  transition: background-color 0.2s;
+}
+
+#start-btn:hover,
+#reset-score-btn:hover {
+  background-color: #e0e0e0;
+}
